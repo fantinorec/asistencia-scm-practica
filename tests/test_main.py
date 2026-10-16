@@ -1,4 +1,10 @@
 
+import sys
+from pathlib import Path
+
+# Agregar la carpeta raíz del proyecto a la ruta de búsqueda
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 import main
 
 
@@ -27,3 +33,4 @@ def test_materia_personalizada():
         "dni": "40123456",
         "materia": "Programacion III"
     }) is True
+
